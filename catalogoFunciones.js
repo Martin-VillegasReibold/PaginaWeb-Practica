@@ -183,7 +183,7 @@ function agregarAGustos(e){
 
 }
 
-//Buscador general.
+//Buscador general. ()
 
 function comenzarBusqueda (){
 document.addEventListener("keyup" , e =>{
