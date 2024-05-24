@@ -1,0 +1,128 @@
+
+
+<html>
+    
+<Head>
+
+<title> Programacion Estatica y Desarrollo Web 2</title>
+
+<link rel="stylesheet" type="text/css" href="style.css" />
+
+
+    
+</Head>
+    
+    
+<Body>
+
+    <h1 id = "Writer">Greener's Hall</h1>
+    
+    <ul id="encabezado">
+        <li><a href= "CreacionHistoria.html">Share a text</a></li>
+        <li><a href= "CatalogoHistoriasUsuario.html">Home</a></li>
+        <li><a href= "GustosUsuario.html">Your likes</a></li>
+        <li><a href="CatalogoHistorias.html">Logout</a></li>
+
+    </ul>
+
+<div class ="wrapper">   
+    
+    <h2 id="contador">Your Readings</h2>
+
+
+       
+  
+  <label for = "buscador"> <h1>Search --> </h1></label>
+  <input type="text" id ="buscador" NAME = "buscador" placeholder = "Look for something to read"/>
+
+  <aside>
+   
+    <div id = "filtrado">
+      <div id = "selector">
+        <label>Genre:</label><br>
+        <input type ="radio" id ="genero0" name ="genero" value = "All" checked>
+        <label for="genero0">All</label><br>
+        <input type ="radio" id ="genero1" name ="genero" value = "Aventure">
+        <label for="genero1">Aventure</label><br>
+        <input type ="radio" id ="genero2" name ="genero" value = "Action">
+        <label for="genero1">Action</label><br>
+        <input type ="radio" id ="genero3" name ="genero" value = "Comedy">
+        <label for="genero1">Comedy</label><br>
+        <input type ="radio" id ="genero4" name ="genero" value = "Romance">
+        <label for="genero1">Romance</label><br>
+        <input type ="radio" id ="genero5" name ="genero" value = "Mystery">
+        <label for="genero1">Mystery</label><br>
+        <input type ="radio" id ="genero6" name ="genero" value = "Fantasy">
+        <label for="genero1">Fantasy</label><br>
+        <input type ="radio" id ="genero7" name ="genero" value = "Sci-Fi">
+        <label for="genero1">Sci-Fi</label><br>
+      </div>
+
+      
+      
+        <div id ="categoria">
+          <label>Category:</label><br>
+          <input type ="radio" id = "categoria0" value = "All" name = "rb" checked>
+          <label for ="categoria0">All</label><br>
+          <input type ="radio" id ="categoria1" value= "History" name ="rb">
+          <label for="categoria1">History</label><br>
+          <input type ="radio" id ="categoria2" value = "Story" name ="rb">
+          <label for="categoria2">Story</label><br>
+          <input type ="radio" id ="categoria3" value = "Poetry" name ="rb">
+          <label for="categoria3">Poetry</label><br>
+          <input type ="radio" id ="categoria4" value = "FanFic" name ="rb">
+          <label for="categoria4">FanFic</label><br>
+        </div>
+    </div>
+  
+  </aside>
+
+
+
+
+  <div id = "galeria">
+    <div class="contenedor-escritosLike">
+        <p id= "contenidoVacio" class="contenedorVacio">Go look for some texts!</p>
+        <div id= "contenedorGustos" class="contenedorGustos disabled">
+
+           <!--Esto se completa con JS-->
+
+
+        </div>
+
+
+    </div>
+
+
+  </div>
+ 
+
+</div> 
+    
+
+
+<footer class ="footer">
+    <ul id ="pie">
+
+        <li><a href="#">Forums</a></li>
+        <li><a href="#">Affiliates</a></li>
+        <li><a href="#">Contacts</a></li>
+        <li><a href="#">Nettiquete</a></li>  
+
+    </ul>
+</footer>
+
+
+
+    
+</Body>
+
+<script type="text/javascript" src="gustosFunciones.js"></script>
+<script>
+  let nickuser = localStorage.getItem("nick")
+
+ document.getElementById("Writer").innerHTML = "USER: " + nickuser;
+
+</script>
+    
+</html>

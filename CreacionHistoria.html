@@ -1,0 +1,116 @@
+<html>
+
+<Head>
+
+<title> Programacion Estatica y Desarrollo Web </title>
+
+<link rel="stylesheet" type="text/css" href="style.css" />
+
+<script type="text/javascript" src="Creacion.js"></script>
+    
+</Head>
+    
+    
+<Body>
+
+
+
+    <h1 id ="Writer">Greener's Hall</h1>
+    
+    <ul id="encabezado">
+
+        <li><a href= "CreacionHistoria.html">Share a text</a></li>
+        <li><a href= "CatalogoHistoriasUsuario.html">Home</a></li>
+        <li><a href= "GustosUsuario.html">Your likes</a></li>
+        <li><a href="CatalogoHistorias.html">Logout</a></li>
+
+    </ul>
+<div class="wrapper">
+    <h1>Enjoy your write!</h1>
+
+  <form id="miFormulario2">
+
+
+    <label for="titulo">Title:</label>
+    <input type="text" id="titulo" name="titulo" >
+ 
+    <label for="categorias">Category:</label>
+    <select id="categorias" name="categorias">
+      <option></option>
+      <option value="History">History</option>
+      <option value="Story">Story</option>
+      <option value="Poetry">Poetry</option>
+      <option value="FanFic">FanFiction</option>
+    </select>
+
+    <div id = "selector2">
+      <label for="genree">Genre:</label>
+      <select id="genree" name="genree">
+        <option></option>
+        <option value="Aventure">Aventure</option>
+        <option value="Action">Action</option>
+        <option value="Comedy">Comedy</option>
+        <option value="Romance">Romance</option>
+        <option value="Mystery">Mystery</option>
+        <option value="Fantasy">Fantasy</option>
+        <option value="Sci-Fi">Sci-Fi</option>
+      </select>
+    </div> <br>
+
+    
+    
+    
+    <label for="sinopsis">Summary(250 characters):</label>
+    <textarea id="sinopsis" name="sinopsis" ></textarea>
+
+    <br>
+    <label for="texto">Content:</label> <br>
+    <textarea id="texto" name="texto" rows="3" cols="6"></textarea>
+
+    
+
+   <br>
+    <input type="submit" value="Upload" onclick="return validar();">
+  </form>
+
+</div>
+
+<footer class="footer">
+
+    <ul id ="pie">
+
+        <li><a href="#">Forums</a></li>
+        <li><a href="#">Affiliates</a></li>
+        <li><a href="#">Contacts</a></li>
+        <li><a href="#">Nettiquete</a></li>  
+
+    </ul>
+
+</footer>
+
+
+    
+</Body>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Captura el formulario por su ID
+    var form = document.getElementById('miFormulario2');
+
+    // Agrega un controlador de eventos para el evento 'submit'
+    form.addEventListener('submit', function(event) {
+      // Evita que el formulario se envíe
+      event.preventDefault();
+    });
+  });
+
+
+  let nickuser = localStorage.getItem("nick")
+
+ document.getElementById("Writer").innerHTML = "USER: " + nickuser;
+
+</script>
+    
+    
+    
+</html>

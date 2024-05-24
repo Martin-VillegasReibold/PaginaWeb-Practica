@@ -1,0 +1,92 @@
+<html>
+
+<Head>
+
+<title> Programacion Estatica y Desarrollo Web </title>
+
+<link rel="stylesheet" type="text/css" href="style.css" />
+
+    
+</Head>
+    
+    
+<Body>
+
+
+
+    <h1 id="Writer" >User:</h1>
+    
+    <ul id="encabezado">
+
+        <li><a href= "CreacionHistoria.html">Share a text</a></li>
+        <li><a href= "CatalogoHistoriasUsuario.html">Home</a></li>
+        <li><a href= "GustosUsuario.html">Your likes</a></li>
+        <li><a href="ApartadoLectura.html">Logout</a></li>
+
+    </ul>
+    <div class="wrapper">
+        <h1 id = "titlee">Enjoy your reading!</h1>
+    
+        <div id = "ajuste">
+            <label for="textsize">Text size</label>
+            <select id="textsize" name="textsize" onchange="cambiarLetraTamano(this)">
+              <option value="size1">x1</option>
+              <option value="size2">x2</option>
+              <option value="size3">x3</option>
+            </select>
+        
+            <label>Background color: </label>
+            <input type = "radio" id= "color1" name = "color"onchange="cambiarColor(this)" checked>
+            <label for ="color1">Clear</label>
+            <input type = "radio" id= "color2" name = "color" onchange="cambiarColor(this)">
+            <label for ="color2">Dark</label>
+        </div>
+    
+        <div id = "contenidoMostrar">
+    
+            <!-- se completa con JS-->
+    
+        </div>
+    
+      
+    
+        <div id = "comentario">
+    
+            <label for="review">Leave a review to share your thoughts with the Author!</label>
+            <textarea id="review" name="review" ></textarea>
+    
+            <input type="submit" id= "send" value="Send" onclick="enviar()">
+    
+        </div>
+        
+      
+    
+    </div>
+    
+    <footer class="footer">
+    
+        <ul id ="pie">
+    
+            <li><a href="#">Forums</a></li>
+            <li><a href="#">Affiliates</a></li>
+            <li><a href="#">Contacts</a></li>
+            <li><a href="#">Nettiquete</a></li>  
+    
+        </ul>
+    
+    </footer>
+    
+    
+        
+    </Body>
+        
+        <script type="text/javascript" src="mostrarEscrito.js"></script>
+
+        <script>
+
+            let nickuser = localStorage.getItem("nick")
+
+            document.getElementById("Writer").innerHTML = "USER: " + nickuser;
+        </script>
+        
+</html>

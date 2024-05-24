@@ -1,0 +1,434 @@
+/*
+Estilos css de MyCatchPhrase
+*/
+
+
+body {
+    height: 100%;
+    background-image: url("6511.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/*
+Estilos para que el pie de pagina este siempre al final
+*/
+.wrapper {
+    min-height: calc(100% - 0rem);
+}
+.footer {
+    height: 0rem;
+    background-color: blue;
+}
+
+/*
+estilos de titulos generales.
+*/
+h1 {
+    text-align: center;
+    /*font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;*/
+    font-family:'Courier New', Courier, monospace;
+    color: aquamarine;
+}
+
+h2{
+    margin-left: 30%;
+    margin-right: 52%;
+    margin-top: 3%;
+    text-decoration:underline overline;
+    font-family:'Courier New', Courier, monospace;
+    color: aquamarine;
+}
+
+
+/*
+.gal:hover {
+    color: #000 ;
+}
+*/
+
+/*
+select[name = "Tipo"]{
+    margin-right: 40%;
+    margin-top: -4%;
+    float: right;
+    appearance: none;
+    padding: 15px 20px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    border: 3px solid rgb(63, 192, 63);
+    background-color: #2add06;
+    font-size: 18px;
+    color: aquamarine;
+}
+
+select[name = "Tipo"]:hover{
+    color: #000;
+    background: #7aba2e;
+}
+*/
+input[type="text"][name = "buscador"]{
+    margin-right: 24%;
+    margin-top: -5%;
+    float: right;
+    appearance: none;
+    padding: 15px 20px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+   border: 3px solid rgb(63, 192, 63);
+    background-color: #2add06;
+    font-size: 18px;
+    color: aquamarine;
+}
+
+/*
+Estilos CatalogoHistorias
+*/
+
+#filtrado {
+    /*margin: 0 13% 0 80%;*/
+    color: aquamarine;
+    letter-spacing: 1px;
+    border: solid rgb(63, 192, 63);
+    border-radius: 5px;
+    background-color:#2add06 ;
+    display: flex;
+    flex-direction:column;
+    gap: 15px;
+   
+}
+
+aside{
+    position:fixed;
+    margin-bottom: 20%;
+    margin-left: 78%;
+}
+
+#galeria {
+    background-color: rgb(63, 192, 63);
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin:  auto;
+}
+
+.contenedor-escritos{
+    display:grid;
+    gap: 10px;
+
+}
+
+.imagenEscrito{
+    max-width: 100%;
+    border-radius: 10px;
+    border-top-right-radius: 0%;
+    border-bottom-right-radius: 0%;
+}
+
+
+.detallesEscritos {
+    background-color: #2add06;
+    color:aquamarine;
+    padding: 1px;
+    border-radius: 10px;
+    border-top-left-radius: 0%;
+    border-bottom-left-radius: 0%;
+    
+}
+.escritos{
+    display: grid;
+    grid-template-columns:25% 75%;
+    gap: 1px;
+}
+.titulo{
+    font-size: 20px;
+    margin: 5px 5px 0 5px;
+}
+.sinopsis{
+    margin-top: 0;
+}
+a {
+    text-decoration: none;
+    color: aquamarine;
+}
+
+a:hover {
+    color: #000;
+
+}
+
+
+/*
+Estilos Gustos Usuario
+*/
+.contenedorGustos{
+    display:grid;
+    gap: 10px;
+}
+
+
+.escritoGusto{
+    display: grid;
+    grid-template-columns:25% 75%;
+    gap: 1px;
+}
+.removerEscrito{
+    margin: -6% 0 0 -25%;
+}
+.like{
+    margin: -7% 0 0 -23%;
+}
+
+
+.contenedorVacio{
+    color: aquamarine;
+    /*display: none;*/
+}
+
+.disabled {
+    display: none;
+}
+
+
+
+
+
+/*
+Estilos Encabezado
+*/
+
+#encabezado {
+  padding: 5px;
+  margin: auto;
+  text-align: center;
+  letter-spacing: 3px;
+  color: #fff;
+  background:rgb(63, 192, 63);
+  width: 60%;
+  border-radius: 5px;
+ 
+}
+
+#encabezado li {
+    list-style: none;
+    margin: 0;
+    display: inline;
+}
+
+#encabezado li a {
+    padding: 5px 4em;
+    margin: 0;
+    color:aquamarine;
+    background: #2add06;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+#encabezado li a:hover {
+    color: #000;
+    background: #7aba2e;
+}
+
+/*
+Estilos Pie de Pagina
+*/
+
+#pie {
+    padding: 5px;
+    margin: 3% auto;
+    text-align: center;
+    letter-spacing: 3px;
+    color: #fff;
+    background:rgb(63, 192, 63);
+    width: 60%;
+    border-radius: 5px;
+    
+}
+
+#pie li {
+    list-style: none;
+    margin: 0;
+    display:inline;
+}
+
+#pie li a {
+    padding: 5px 4em;
+    margin: 0;
+    color:aquamarine;
+    background: #2add06;
+    text-decoration:none;
+    border-radius: 10px;
+}
+
+#pie li a:hover {
+    color: #000;
+    background: #7aba2e;
+}
+
+
+/*
+Estilos CrearUsuario.
+*/
+
+#miFormulario {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+  
+
+#contrasena,#nick, #BGO, #nombre, #apellido, #email{
+    width: 95%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    margin-bottom: 12px;
+}
+
+#dia,#mes,#anio{
+    width: 10%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    margin-bottom: 12px;
+}
+
+#terms{
+margin-left: 30%;
+margin-bottom: 12px;
+}
+  
+#BGO {
+    height: 36px;
+}
+
+.date-inputs {
+    display: flex;
+    gap: 10px;
+}
+  
+
+input[type="submit"] {
+    background-color: #4caf50;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+
+/*
+Pagina principal forms
+*/
+
+#nuevo, #popular, #update{
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    margin: 3% auto;
+}
+
+/*
+Estilos CreacionHistoria
+*/
+
+#miFormulario2 {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#titulo{
+    width: 95%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    margin-bottom: 20px;
+}
+
+#selector2{
+    margin-left: 5%;
+    display: inline-table;
+    margin-bottom: 15px;
+    
+}
+label[for = "categorias"]{
+    margin-left: 10%;
+}
+
+#sinopsis,#texto {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    margin-bottom: 12px;
+}
+
+
+/*
+Estilos ApartadoLectura
+*/
+
+
+#contenido{
+    background-color:#2add06;
+    color: aquamarine;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 3% auto;
+}
+
+#comentario{
+    background-color: #2add06;
+    color: aquamarine;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 3% auto;
+}
+
+textarea[id = "review"]{
+    width: 100%;
+    height: 10%;
+    margin-bottom: 3%;
+
+}
+#ajuste{
+    background-color: #2add06;
+    color: aquamarine;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 360px;
+    margin: 3% auto;
+}
+
+#ajuste:hover{
+    color: #000;
+    background: rgb(63, 192, 63);
+}
+
+
+.filtro {
+    display: none;
+}

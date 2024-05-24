@@ -1,0 +1,114 @@
+<html>
+
+<Head>
+
+<title> Programacion Estatica y Desarrollo Web 3</title>
+
+<link rel="stylesheet" type="text/css" href="style.css" />
+
+<script type="text/javascript" src="Funciones.js"></script>
+    
+</Head>
+    
+    
+<Body>
+
+    <h1>Greener's Hall</h1>
+    
+    <ul id="encabezado">
+
+        <li><a href= "LogIn.html">Share a text</a></li>
+        <li><a href= "CatalogoHistorias.html">Home</a></li>
+        <li><a href= "crearUsuario.html">Sing up</a></li>
+        <li><a href="LogIn.html">Login</a></li>
+
+    </ul>
+
+<div class ="wrapper">   
+
+
+
+ <h1>CREATE USER</h1>
+
+  <form id="miFormulario">
+
+
+
+    <label for="nombre">Name:</label>
+    <input type="text" id="nombre" name="nombre" >
+
+
+
+    <label for="apellido">Surname:</label>
+    <input type="text" id="apellido" name="apellido" >
+
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email" >
+
+    <label for="contrasena">Password:</label>
+    <input type="password" id="contrasena" name="contrasena" >
+
+    <label for="BGO">Gender:</label>
+    <select id="BGO" name="BGO">
+      <option value="gen1">Male</option>
+      <option value="gen2">Female</option>
+      <option value="gen3">Other</option>
+    </select>
+
+
+    <label for="fecha_nacimiento">Birth date:</label>
+    <div class="date-inputs">
+      <input type="text" id="dia" name="dia" placeholder="Day" >  
+      <input type="text" id="mes" name="mes" placeholder="Month" > 
+      <input type="text" id="anio" name="anio" placeholder="Year" >
+    </div>
+
+    <label for="nick">Nickname:</label>
+    <input type="text" id="nick" name="nick" placeholder="The name others will use to recognice you" >
+
+
+    <br>
+    <input type ="checkbox" id ="terms" name ="terms">
+    <label for="terms">Terms and Conditions</label> <br>
+
+
+    <input type="submit" id="create" value="Create" onclick="validar()">
+  </form>
+
+</div> 
+    
+
+
+<footer class ="footer">
+    <ul id ="pie">
+
+        <li><a href="#">Forums</a></li>
+        <li><a href="#">Affiliates</a></li>
+        <li><a href="#">Contacts</a></li>
+        <li><a href="#">Nettiquete</a></li>  
+
+    </ul>
+</footer>
+
+
+
+    
+</Body>
+    
+<script>    
+
+  document.addEventListener('DOMContentLoaded', function() {
+      // Captura el formulario por su ID
+      var form = document.getElementById('miFormulario');
+  
+      // Agrega un controlador de eventos para el evento 'submit'
+      form.addEventListener('submit', function(event) {
+        // Evita que el formulario se envíe
+        event.preventDefault();
+      });
+    });
+
+    
+  </script>
+    
+</html>
